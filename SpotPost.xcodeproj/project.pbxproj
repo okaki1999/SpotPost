@@ -14,6 +14,12 @@
 		3B0D8AF52D32EAC1004B3888 /* SpotPostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D8AF42D32EAC1004B3888 /* SpotPostTests.swift */; };
 		3B0D8AFF2D32EAC1004B3888 /* SpotPostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D8AFE2D32EAC1004B3888 /* SpotPostUITests.swift */; };
 		3B0D8B012D32EAC1004B3888 /* SpotPostUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D8B002D32EAC1004B3888 /* SpotPostUITestsLaunchTests.swift */; };
+		3B0D8B0F2D32EBB4004B3888 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D8B0E2D32EBB4004B3888 /* Post.swift */; };
+		3B0D8B122D32EBCA004B3888 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D8B112D32EBCA004B3888 /* PostListView.swift */; };
+		3B0D8B142D32EBD5004B3888 /* AddPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D8B132D32EBD5004B3888 /* AddPostView.swift */; };
+		3B0D8B172D32EBF6004B3888 /* PostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D8B162D32EBF6004B3888 /* PostManager.swift */; };
+		3B0D8B1A2D32EC0D004B3888 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D8B192D32EC0D004B3888 /* LocationHelper.swift */; };
+		3B0D8B1C2D32EE23004B3888 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D8B1B2D32EE23004B3888 /* DateFormatter+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,13 @@
 		3B0D8AFA2D32EAC1004B3888 /* SpotPostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotPostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0D8AFE2D32EAC1004B3888 /* SpotPostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotPostUITests.swift; sourceTree = "<group>"; };
 		3B0D8B002D32EAC1004B3888 /* SpotPostUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotPostUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3B0D8B0E2D32EBB4004B3888 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3B0D8B112D32EBCA004B3888 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		3B0D8B132D32EBD5004B3888 /* AddPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostView.swift; sourceTree = "<group>"; };
+		3B0D8B162D32EBF6004B3888 /* PostManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostManager.swift; sourceTree = "<group>"; };
+		3B0D8B192D32EC0D004B3888 /* LocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
+		3B0D8B1B2D32EE23004B3888 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		3B0D8B1D2D32F813004B3888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +107,11 @@
 		3B0D8AE22D32EAC0004B3888 /* SpotPost */ = {
 			isa = PBXGroup;
 			children = (
+				3B0D8B1D2D32F813004B3888 /* Info.plist */,
+				3B0D8B182D32EBFF004B3888 /* Utils */,
+				3B0D8B152D32EBE5004B3888 /* ViewModels */,
+				3B0D8B102D32EBBE004B3888 /* Views */,
+				3B0D8B0D2D32EBA1004B3888 /* Models */,
 				3B0D8AE32D32EAC0004B3888 /* SpotPostApp.swift */,
 				3B0D8AE52D32EAC0004B3888 /* ContentView.swift */,
 				3B0D8AE72D32EAC1004B3888 /* Assets.xcassets */,
@@ -125,6 +143,40 @@
 				3B0D8B002D32EAC1004B3888 /* SpotPostUITestsLaunchTests.swift */,
 			);
 			path = SpotPostUITests;
+			sourceTree = "<group>";
+		};
+		3B0D8B0D2D32EBA1004B3888 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B0D8B0E2D32EBB4004B3888 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B0D8B102D32EBBE004B3888 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B0D8B112D32EBCA004B3888 /* PostListView.swift */,
+				3B0D8B132D32EBD5004B3888 /* AddPostView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B0D8B152D32EBE5004B3888 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3B0D8B162D32EBF6004B3888 /* PostManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3B0D8B182D32EBFF004B3888 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3B0D8B192D32EC0D004B3888 /* LocationHelper.swift */,
+				3B0D8B1B2D32EE23004B3888 /* DateFormatter+Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0D8B0F2D32EBB4004B3888 /* Post.swift in Sources */,
 				3B0D8AE62D32EAC0004B3888 /* ContentView.swift in Sources */,
+				3B0D8B122D32EBCA004B3888 /* PostListView.swift in Sources */,
 				3B0D8AE42D32EAC0004B3888 /* SpotPostApp.swift in Sources */,
+				3B0D8B142D32EBD5004B3888 /* AddPostView.swift in Sources */,
+				3B0D8B1A2D32EC0D004B3888 /* LocationHelper.swift in Sources */,
+				3B0D8B1C2D32EE23004B3888 /* DateFormatter+Extensions.swift in Sources */,
+				3B0D8B172D32EBF6004B3888 /* PostManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +482,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SpotPost/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpotPost/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +511,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SpotPost/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpotPost/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
